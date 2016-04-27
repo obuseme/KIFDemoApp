@@ -22,4 +22,7 @@ class WelcomeViewController: UIViewController {
         }
     }
     
+    @IBAction func startOverAction(sender: AnyObject) {
+        dismissViewControllerAnimated(true, completion: nil)
+    }
 }

@@ -92,12 +92,21 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MmM-mN-jX8">
+                                <rect key="frame" x="265" y="538" width="71" height="30"/>
+                                <state key="normal" title="Start Over"/>
+                                <connections>
+                                    <action selector="startOverAction:" destination="ttk-v7-tBn" eventType="touchUpInside" id="1t8-eT-ofb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="mtk-eh-JVN" firstAttribute="centerX" secondItem="EFj-Xa-wzs" secondAttribute="centerX" id="Dbt-5T-1HM"/>
+                            <constraint firstItem="MmM-mN-jX8" firstAttribute="centerX" secondItem="EFj-Xa-wzs" secondAttribute="centerX" id="Rum-Es-ufD"/>
                             <constraint firstItem="mtk-eh-JVN" firstAttribute="top" secondItem="1Ud-9C-4G9" secondAttribute="bottom" constant="8" id="Xfd-YN-T2G"/>
                             <constraint firstItem="SNB-Lm-Fzv" firstAttribute="top" secondItem="mtk-eh-JVN" secondAttribute="bottom" constant="22" id="YgY-BU-9us"/>
+                            <constraint firstItem="WD7-mB-2zf" firstAttribute="top" secondItem="MmM-mN-jX8" secondAttribute="bottom" constant="32" id="den-0V-ckO"/>
                             <constraint firstItem="SNB-Lm-Fzv" firstAttribute="centerX" secondItem="EFj-Xa-wzs" secondAttribute="centerX" id="or0-8M-qu6"/>
                         </constraints>
                     </view>
