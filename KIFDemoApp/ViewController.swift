@@ -10,16 +10,15 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
+    @IBOutlet weak var nameField: UITextField!
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if (segue.identifier == "saveAndContinueSegue") {
+            if let welcomeVC = segue.destinationViewController as? WelcomeViewController where nameField.text != "" {
+                welcomeVC.name = nameField.text!
+            }
+        }
     }
-
 
 }
 

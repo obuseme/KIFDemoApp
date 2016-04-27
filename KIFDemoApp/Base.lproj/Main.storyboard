@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KIFDemoApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +17,100 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oJf-2b-qB3">
+                                <rect key="frame" x="25" y="79" width="550" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to the KIF Demo App from cleanswifter.com!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WPq-uS-Tz7">
+                                <rect key="frame" x="25" y="33" width="550" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Y8-ct-4uR">
+                                <rect key="frame" x="235" y="117" width="131" height="30"/>
+                                <state key="normal" title="Save, and continue"/>
+                                <connections>
+                                    <segue destination="ttk-v7-tBn" kind="showDetail" identifier="saveAndContinueSegue" id="ibp-Ex-7E3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BiY-MW-nXV">
+                                <rect key="frame" x="215" y="220" width="170" height="30"/>
+                                <state key="normal" title="Continue, without saving">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="ttk-v7-tBn" kind="showDetail" identifier="continueWithoutSavingSegue" id="sZD-ky-I0k"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="oJf-2b-qB3" secondAttribute="trailing" constant="5" id="2DI-XI-S9A"/>
+                            <constraint firstItem="oJf-2b-qB3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="4iW-nW-Kul"/>
+                            <constraint firstItem="BiY-MW-nXV" firstAttribute="top" secondItem="0Y8-ct-4uR" secondAttribute="bottom" constant="73" id="GSu-Z5-UlV"/>
+                            <constraint firstItem="WPq-uS-Tz7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="5" id="QE2-Mp-VRF"/>
+                            <constraint firstItem="WPq-uS-Tz7" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="13" id="QHc-f3-gVd"/>
+                            <constraint firstItem="0Y8-ct-4uR" firstAttribute="top" secondItem="oJf-2b-qB3" secondAttribute="bottom" constant="8" id="aQE-uI-Z6x"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WPq-uS-Tz7" secondAttribute="trailing" constant="5" id="k2M-4F-oc7"/>
+                            <constraint firstItem="BiY-MW-nXV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lWl-oR-OvC"/>
+                            <constraint firstItem="oJf-2b-qB3" firstAttribute="top" secondItem="WPq-uS-Tz7" secondAttribute="bottom" constant="25" id="oh6-cZ-T76"/>
+                            <constraint firstItem="0Y8-ct-4uR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pcL-7v-VSn"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="nameField" destination="oJf-2b-qB3" id="Pn0-F5-twd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="180" y="449"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="Yr5-fU-XIw">
+            <objects>
+                <viewController id="ttk-v7-tBn" customClass="WelcomeViewController" customModule="KIFDemoApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1Ud-9C-4G9"/>
+                        <viewControllerLayoutGuide type="bottom" id="WD7-mB-2zf"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EFj-Xa-wzs">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to KIFtacular!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mtk-eh-JVN">
+                                <rect key="frame" x="212" y="28" width="177" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Are you ready Player 1?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNB-Lm-Fzv">
+                                <rect key="frame" x="211" y="71" width="178" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mtk-eh-JVN" firstAttribute="centerX" secondItem="EFj-Xa-wzs" secondAttribute="centerX" id="Dbt-5T-1HM"/>
+                            <constraint firstItem="mtk-eh-JVN" firstAttribute="top" secondItem="1Ud-9C-4G9" secondAttribute="bottom" constant="8" id="Xfd-YN-T2G"/>
+                            <constraint firstItem="SNB-Lm-Fzv" firstAttribute="top" secondItem="mtk-eh-JVN" secondAttribute="bottom" constant="22" id="YgY-BU-9us"/>
+                            <constraint firstItem="SNB-Lm-Fzv" firstAttribute="centerX" secondItem="EFj-Xa-wzs" secondAttribute="centerX" id="or0-8M-qu6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="welcomeLabel" destination="SNB-Lm-Fzv" id="C2l-RJ-O8b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wRV-RD-T2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="881" y="449"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="ibp-Ex-7E3"/>
+    </inferredMetricsTieBreakers>
 </document>
