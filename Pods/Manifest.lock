@@ -1,0 +1,14 @@
+PODS:
+  - KIF (3.4.2):
+    - KIF/Core (= 3.4.2)
+  - KIF/Core (3.4.2)
+
+DEPENDENCIES:
+  - KIF (~> 3.4.2)
+
+SPEC CHECKSUMS:
+  KIF: b518c9831453abea5afdbbde3908ec47832d6d56
+
+PODFILE CHECKSUM: 51ffe68b6cf64ad08db250491d2e306268f1d131
+
+COCOAPODS: 1.0.0.beta.8

@@ -13,9 +13,22 @@
 		41002D641CD04B1A00209E46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41002D631CD04B1A00209E46 /* Assets.xcassets */; };
 		41002D671CD04B1A00209E46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41002D651CD04B1A00209E46 /* LaunchScreen.storyboard */; };
 		41002D6F1CD04C8300209E46 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41002D6E1CD04C8300209E46 /* WelcomeViewController.swift */; };
+		41002D8C1CD05A1500209E46 /* KIFDemoAppFunctionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41002D8B1CD05A1500209E46 /* KIFDemoAppFunctionalTests.swift */; };
+		50A01895906F44D1BC18CC9C /* libPods-KIFDemoAppFunctionalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DE6000F8972A967227D703 /* libPods-KIFDemoAppFunctionalTests.a */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		41002D8E1CD05A1500209E46 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 41002D511CD04B1A00209E46 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 41002D581CD04B1A00209E46;
+			remoteInfo = KIFDemoApp;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		3CFD2F7D7F7976892C43A301 /* Pods-KIFDemoAppFunctionalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIFDemoAppFunctionalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-KIFDemoAppFunctionalTests/Pods-KIFDemoAppFunctionalTests.release.xcconfig"; sourceTree = "<group>"; };
 		41002D591CD04B1A00209E46 /* KIFDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KIFDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41002D5C1CD04B1A00209E46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		41002D5E1CD04B1A00209E46 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +37,12 @@
 		41002D661CD04B1A00209E46 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41002D681CD04B1A00209E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41002D6E1CD04C8300209E46 /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		41002D891CD05A1500209E46 /* KIFDemoAppFunctionalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KIFDemoAppFunctionalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		41002D8B1CD05A1500209E46 /* KIFDemoAppFunctionalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFDemoAppFunctionalTests.swift; sourceTree = "<group>"; };
+		41002D8D1CD05A1500209E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41002D931CD05A7200209E46 /* KIFDemoAppFunctionalTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIFDemoAppFunctionalTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		77FD974C8AA7B1B5A94A83F3 /* Pods-KIFDemoAppFunctionalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIFDemoAppFunctionalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KIFDemoAppFunctionalTests/Pods-KIFDemoAppFunctionalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		93DE6000F8972A967227D703 /* libPods-KIFDemoAppFunctionalTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KIFDemoAppFunctionalTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +53,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		41002D861CD05A1500209E46 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				50A01895906F44D1BC18CC9C /* libPods-KIFDemoAppFunctionalTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -41,7 +68,10 @@
 			isa = PBXGroup;
 			children = (
 				41002D5B1CD04B1A00209E46 /* KIFDemoApp */,
+				41002D8A1CD05A1500209E46 /* KIFDemoAppFunctionalTests */,
 				41002D5A1CD04B1A00209E46 /* Products */,
+				94918AD733924F1CA4F42E8D /* Pods */,
+				7F68D342207C83A85A4BC0D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -49,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				41002D591CD04B1A00209E46 /* KIFDemoApp.app */,
+				41002D891CD05A1500209E46 /* KIFDemoAppFunctionalTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +96,33 @@
 				41002D6E1CD04C8300209E46 /* WelcomeViewController.swift */,
 			);
 			path = KIFDemoApp;
+			sourceTree = "<group>";
+		};
+		41002D8A1CD05A1500209E46 /* KIFDemoAppFunctionalTests */ = {
+			isa = PBXGroup;
+			children = (
+				41002D8B1CD05A1500209E46 /* KIFDemoAppFunctionalTests.swift */,
+				41002D8D1CD05A1500209E46 /* Info.plist */,
+				41002D931CD05A7200209E46 /* KIFDemoAppFunctionalTests-Bridging-Header.h */,
+			);
+			path = KIFDemoAppFunctionalTests;
+			sourceTree = "<group>";
+		};
+		7F68D342207C83A85A4BC0D5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				93DE6000F8972A967227D703 /* libPods-KIFDemoAppFunctionalTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		94918AD733924F1CA4F42E8D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				77FD974C8AA7B1B5A94A83F3 /* Pods-KIFDemoAppFunctionalTests.debug.xcconfig */,
+				3CFD2F7D7F7976892C43A301 /* Pods-KIFDemoAppFunctionalTests.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +145,27 @@
 			productReference = 41002D591CD04B1A00209E46 /* KIFDemoApp.app */;
 			productType = "com.apple.product-type.application";
 		};
+		41002D881CD05A1500209E46 /* KIFDemoAppFunctionalTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 41002D921CD05A1500209E46 /* Build configuration list for PBXNativeTarget "KIFDemoAppFunctionalTests" */;
+			buildPhases = (
+				6443508DA029E4E9E2CAEEAD /* 📦 Check Pods Manifest.lock */,
+				41002D851CD05A1500209E46 /* Sources */,
+				41002D861CD05A1500209E46 /* Frameworks */,
+				41002D871CD05A1500209E46 /* Resources */,
+				40A28D57151D419C15DA0CB5 /* 📦 Embed Pods Frameworks */,
+				4D02178CBDFF6963DEEDC899 /* 📦 Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				41002D8F1CD05A1500209E46 /* PBXTargetDependency */,
+			);
+			name = KIFDemoAppFunctionalTests;
+			productName = KIFDemoAppFunctionalTests;
+			productReference = 41002D891CD05A1500209E46 /* KIFDemoAppFunctionalTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +178,10 @@
 				TargetAttributes = {
 					41002D581CD04B1A00209E46 = {
 						CreatedOnToolsVersion = 7.3;
+					};
+					41002D881CD05A1500209E46 = {
+						CreatedOnToolsVersion = 7.3;
+						TestTargetID = 41002D581CD04B1A00209E46;
 					};
 				};
 			};
@@ -116,6 +199,7 @@
 			projectRoot = "";
 			targets = (
 				41002D581CD04B1A00209E46 /* KIFDemoApp */,
+				41002D881CD05A1500209E46 /* KIFDemoAppFunctionalTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,7 +215,62 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		41002D871CD05A1500209E46 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		40A28D57151D419C15DA0CB5 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KIFDemoAppFunctionalTests/Pods-KIFDemoAppFunctionalTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D02178CBDFF6963DEEDC899 /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KIFDemoAppFunctionalTests/Pods-KIFDemoAppFunctionalTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6443508DA029E4E9E2CAEEAD /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		41002D551CD04B1A00209E46 /* Sources */ = {
@@ -144,7 +283,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		41002D851CD05A1500209E46 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				41002D8C1CD05A1500209E46 /* KIFDemoAppFunctionalTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		41002D8F1CD05A1500209E46 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 41002D581CD04B1A00209E46 /* KIFDemoApp */;
+			targetProxy = 41002D8E1CD05A1500209E46 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		41002D601CD04B1A00209E46 /* Main.storyboard */ = {
@@ -273,6 +428,37 @@
 			};
 			name = Release;
 		};
+		41002D901CD05A1500209E46 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77FD974C8AA7B1B5A94A83F3 /* Pods-KIFDemoAppFunctionalTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = KIFDemoAppFunctionalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cleanswifter.KIFDemoAppFunctionalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KIFDemoAppFunctionalTests/KIFDemoAppFunctionalTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KIFDemoApp.app/KIFDemoApp";
+			};
+			name = Debug;
+		};
+		41002D911CD05A1500209E46 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3CFD2F7D7F7976892C43A301 /* Pods-KIFDemoAppFunctionalTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = KIFDemoAppFunctionalTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.cleanswifter.KIFDemoAppFunctionalTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "KIFDemoAppFunctionalTests/KIFDemoAppFunctionalTests-Bridging-Header.h";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KIFDemoApp.app/KIFDemoApp";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -292,6 +478,16 @@
 				41002D6D1CD04B1A00209E46 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		41002D921CD05A1500209E46 /* Build configuration list for PBXNativeTarget "KIFDemoAppFunctionalTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41002D901CD05A1500209E46 /* Debug */,
+				41002D911CD05A1500209E46 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
