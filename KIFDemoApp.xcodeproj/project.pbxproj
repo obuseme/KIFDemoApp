@@ -14,6 +14,8 @@
 		41002D671CD04B1A00209E46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41002D651CD04B1A00209E46 /* LaunchScreen.storyboard */; };
 		41002D6F1CD04C8300209E46 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41002D6E1CD04C8300209E46 /* WelcomeViewController.swift */; };
 		41002D8C1CD05A1500209E46 /* KIFDemoAppFunctionalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41002D8B1CD05A1500209E46 /* KIFDemoAppFunctionalTests.swift */; };
+		41117C081CD1887E00A72EB6 /* MyFirstKIFTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41117C071CD1887E00A72EB6 /* MyFirstKIFTest.swift */; };
+		41117C0A1CD18B5600A72EB6 /* KIF+Swift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41117C091CD18B5600A72EB6 /* KIF+Swift.swift */; };
 		50A01895906F44D1BC18CC9C /* libPods-KIFDemoAppFunctionalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 93DE6000F8972A967227D703 /* libPods-KIFDemoAppFunctionalTests.a */; };
 /* End PBXBuildFile section */
 
@@ -41,6 +43,8 @@
 		41002D8B1CD05A1500209E46 /* KIFDemoAppFunctionalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KIFDemoAppFunctionalTests.swift; sourceTree = "<group>"; };
 		41002D8D1CD05A1500209E46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41002D931CD05A7200209E46 /* KIFDemoAppFunctionalTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "KIFDemoAppFunctionalTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		41117C071CD1887E00A72EB6 /* MyFirstKIFTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyFirstKIFTest.swift; sourceTree = "<group>"; };
+		41117C091CD18B5600A72EB6 /* KIF+Swift.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "KIF+Swift.swift"; sourceTree = "<group>"; };
 		77FD974C8AA7B1B5A94A83F3 /* Pods-KIFDemoAppFunctionalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KIFDemoAppFunctionalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KIFDemoAppFunctionalTests/Pods-KIFDemoAppFunctionalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		93DE6000F8972A967227D703 /* libPods-KIFDemoAppFunctionalTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KIFDemoAppFunctionalTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -104,6 +108,8 @@
 				41002D8B1CD05A1500209E46 /* KIFDemoAppFunctionalTests.swift */,
 				41002D8D1CD05A1500209E46 /* Info.plist */,
 				41002D931CD05A7200209E46 /* KIFDemoAppFunctionalTests-Bridging-Header.h */,
+				41117C071CD1887E00A72EB6 /* MyFirstKIFTest.swift */,
+				41117C091CD18B5600A72EB6 /* KIF+Swift.swift */,
 			);
 			path = KIFDemoAppFunctionalTests;
 			sourceTree = "<group>";
@@ -287,7 +293,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41117C0A1CD18B5600A72EB6 /* KIF+Swift.swift in Sources */,
 				41002D8C1CD05A1500209E46 /* KIFDemoAppFunctionalTests.swift in Sources */,
+				41117C081CD1887E00A72EB6 /* MyFirstKIFTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
